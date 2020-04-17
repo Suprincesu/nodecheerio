@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 class="text-center text-uppercase" style="font-weight: 900;">Sources</h1>
+    <div class="text-center">
+        <a class="btn btn-primary" style="color: white;" href="/">www.horoscope.com</a>
+        <a class="btn btn-secondary" style="color: white;" href="/himalayan">www.himalayantimes.com</a>
+    </div>
+    <h2 class="text-center font-weight-bold">Date: {{date}}</h2>
+    <div class="row">
+        {{#each horoscopes}}
+        <div class="col-md-6">
+            <div class="card m-1">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2 style="font-weight: 900;">{{this.name}}</h2>
+                        <h5>{{this.range}}</h5>
+                    </div>
+                    <h6>{{this.horoscope}}</h6>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
